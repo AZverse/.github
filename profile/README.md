@@ -13,16 +13,12 @@ This organization hosts the open-source components of that network. **Everything
 ## What you can verify here
 
 - **Consensus you can check offline.** [`az-bft`](https://github.com/AZverse/az-bft) is our BFT consensus engine — a weighted, two-chain HotStuff-family protocol with deterministic safety. It ships an **offline finality verifier**: given a run transcript, you can independently confirm the quorum signatures and linked commit certificates yourself, without trusting an AZverse endpoint.
-- **Contracts on-chain.** [`asset-vault-contracts`](https://github.com/AZverse/asset-vault-contracts) holds the Solidity contracts behind AZ AssetVault — deployed, and open to read.
-- **Independent withdrawal signer.** [`asset-vault-signer`](https://github.com/AZverse/asset-vault-signer) holds one of the AssetVault contract's registered validator keys — so the relayer alone cannot move funds. A withdrawal needs both the relayer's request and enough validator signatures to meet the contract's on-chain power threshold.
 
 ## Core repositories
 
 | Repository | What it is |
 |---|---|
 | [**az-bft**](https://github.com/AZverse/az-bft) | BFT consensus engine for the AZ L1 — protocol spec, safety rules, cryptography, deterministic devnet, and an offline finality verifier. `Apache-2.0`. |
-| [**asset-vault-contracts**](https://github.com/AZverse/asset-vault-contracts) | On-chain Solidity contracts for AZ AssetVault. |
-| [**asset-vault-signer**](https://github.com/AZverse/asset-vault-signer) | External validator signer for AZ AssetVault — co-signs withdrawals so the relayer alone cannot move funds. |
 | [**azx-cli**](https://github.com/AZverse/azx-cli) | Command-line tools for the AZverse network. `MIT`. |
 
 ## Progressive decentralization
